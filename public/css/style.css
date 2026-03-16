@@ -1,0 +1,168 @@
+body{
+font-family: Arial;
+background:#eef4ff;
+text-align:center;
+padding:40px;
+}
+
+h1,h2{
+color:#0a3d91;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(2,200px);
+gap:20px;
+justify-content:center;
+margin-top:40px;
+}
+
+.menu a{
+background:#1f6feb;
+color:white;
+padding:20px;
+text-decoration:none;
+border-radius:10px;
+font-size:18px;
+transition:0.3s;
+height: 50;
+}
+
+.menu a:hover{
+background:#0a3d91;
+}
+
+textarea,input{
+width:400px;
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+margin-top:10px;
+}
+
+button{
+margin-top:15px;
+padding:12px 25px;
+background:#1f6feb;
+border:none;
+color:white;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0a3d91;
+}
+
+.safe{
+color:green;
+font-size:20px;
+margin-top:20px;
+}
+
+.warning{
+color:red;
+font-size:20px;
+margin-top:20px;
+}
+
+.tip{
+background:white;
+padding:20px;
+margin:20px auto;
+width:500px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.password-box{
+position:relative;
+width:300px;
+margin:auto;
+}
+
+.password-box input{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.toggle{
+position:absolute;
+right:10px;
+top:10px;
+cursor:pointer;
+font-size:18px;
+}
+
+.safe{
+color:green;
+font-size:18px;
+margin-top:10px;
+}
+
+.warning{
+color:red;
+font-size:18px;
+margin-top:10px;
+}
+
+/* Learning tips layout */
+
+.tips-container{
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+gap:30px;
+max-width:900px;
+margin:40px auto;
+}
+
+.tip-card{
+position:relative;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+overflow:hidden;
+cursor:pointer;
+transition:transform 0.3s;
+}
+
+.tip-card:hover{
+transform:translateY(-5px);
+}
+
+.tip-content h3{
+color:#0a3d91;
+margin-bottom:10px;
+}
+
+.tip-content p{
+color:#333;
+}
+
+/* Overlay animation */
+
+.overlay{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(10,61,145,0.9);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+transform:translateY(100%);
+transition:transform 0.4s ease;
+border-radius:12px;
+}
+
+.tip-card:hover .overlay{
+transform:translateY(0);
+}
